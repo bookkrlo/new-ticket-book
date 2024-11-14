@@ -844,55 +844,22 @@ export default function Component() {
                 <DialogContent className='bg-gray-800 border-gray-700 text-gray-200 rounded-3xl'>
                     <DialogHeader>
                         <DialogTitle>List Your Event</DialogTitle>
-                        <DialogDescription>
-                            Fill out the form below to list your event on our
-                            platform.
+                        <DialogDescription className='text-gray-200'>
+                            For registration, contact bookkrlo.info@gmail.com
                         </DialogDescription>
                     </DialogHeader>
-                    <form className='space-y-4'>
-                        <div className='space-y-2'>
-                            <Label htmlFor='eventName'>Event Name</Label>
-                            <Input
-                                id='eventName'
-                                placeholder='Enter event name'
-                                className='bg-gray-700 border-gray-600 rounded-full'
-                            />
-                        </div>
-                        <div className='space-y-2'>
-                            <Label htmlFor='eventDate'>Event Date</Label>
-                            <Input
-                                id='eventDate'
-                                type='date'
-                                className='bg-gray-700 border-gray-600 rounded-full'
-                            />
-                        </div>
-                        <div className='space-y-2'>
-                            <Label htmlFor='eventLocation'>
-                                Event Location
-                            </Label>
-                            <Input
-                                id='eventLocation'
-                                placeholder='Enter event location'
-                                className='bg-gray-700 border-gray-600 rounded-full'
-                            />
-                        </div>
-                        <div className='space-y-2'>
-                            <Label htmlFor='eventDescription'>
-                                Event Description
-                            </Label>
-                            <Textarea
-                                id='eventDescription'
-                                placeholder='Describe your event'
-                                className='bg-gray-700 border-gray-600 rounded-2xl'
-                            />
-                        </div>
-                        <Button
-                            type='submit'
-                            className='w-full bg-emerald-500 hover:bg-emerald-600 rounded-full'
-                        >
-                            Submit Event
-                        </Button>
-                    </form>
+                    <div className='grid gap-4 py-4'>
+                        <p>
+                            Please reach out to us via email to list your event.
+                            We'll be happy to assist you with the process.
+                        </p>
+                    </div>
+                    <Button
+                        onClick={() => setIsListEventModalOpen(false)}
+                        className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
+                    >
+                        Close
+                    </Button>
                 </DialogContent>
             </Dialog>
 
