@@ -66,18 +66,22 @@ export async function POST(request) {
                 to: body.email,
                 subject: 'Your BookKrlo Purchase Confirmation',
                 text: `Dear ${body.name},
+                
+Subject: Your Payment is Confirmed – Ticket Will Be Sent Soon
 
-Thankyou for your purchase on BookKrlo!
+We are pleased to inform you that we have successfully received and verified your payment for your ticket booking!
+
+Our team is now preparing your ticket, and you will receive it in a separate email very shortly.
 
 Transaction Details:
 - Transaction ID: ${data.data.txnNo}
 - Amount Paid: Rs ${body.amount}
 - Number of Tickets: ${body.ticketCount}
-- Payment Method: JazzCash
+- Payment Method: EasyPaisa
 
-Your tickets will be sent to you shortly in a separate email.
+Thank you for your trust in us. If you have any questions or need assistance in the meantime, please don't hesitate to reach out to us by replying to this email or contacting our support team.
 
-If you have any questions, please don't hesitate to contact us.
+Thank you for choosing book krlo! We wish you a pleasant journey ahead.
 
 Best regards,
 The BookKrlo Team`,
