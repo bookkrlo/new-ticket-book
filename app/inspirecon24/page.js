@@ -1,22 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {
-    Minus,
-    Plus,
-    MapPin,
-    Calendar,
-    Clock,
-    ChevronRight,
-    Facebook,
-    Instagram,
-    Linkedin,
-    Twitter,
-    X,
-    CheckCircle,
-} from 'lucide-react';
+import { Minus, Plus, MapPin, Calendar, Clock, ChevronRight, Facebook, Instagram, X, CheckCircle } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -45,12 +32,12 @@ import usmanSaleem from '@/assets/images/speakers/usmanSaleem.png';
 import wajihUdDin from '@/assets/images/speakers/wajihUdDin.png';
 import logo from '@/assets/images/logo.svg';
 
-export default function Page() {
+export default function Component() {
     const [activeTab, setActiveTab] = useState('tickets');
     const [ticketCount, setTicketCount] = useState(1);
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [isProcessing, setIsProcessing] = useState(false);
-    const [paymentMethod, setPaymentMethod] = useState('jazzcash');
+    const [paymentMethod, setPaymentMethod] = useState('easypaisa');
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -626,45 +613,6 @@ export default function Page() {
                                 </Link>
                             </div>
                         </div>
-                        {/* <div>
-                            <h3 className='text-lg font-semibold mb-4 text-white'>
-                                Resources
-                            </h3>
-                            <ul className='space-y-2'>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Terms
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Privacy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Contact
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div> */}
                         <div>
                             <h3 className='text-lg font-semibold mb-4 text-white'>
                                 Contact
@@ -722,9 +670,7 @@ export default function Page() {
                                 </p>
                                 <p>
                                     <strong>Payment Method:</strong>{' '}
-                                    {paymentMethod === 'jazzcash'
-                                        ? 'JazzCash'
-                                        : paymentMethod === 'easypaisa'
+                                    {paymentMethod === 'easypaisa'
                                         ? 'EasyPaisa'
                                         : 'Bank Transfer'}
                                 </p>
@@ -775,26 +721,8 @@ export default function Page() {
                                 <RadioGroup
                                     defaultValue='easypaisa'
                                     onValueChange={setPaymentMethod}
-                                    className='grid grid-cols-3 gap-4'
+                                    className='grid grid-cols-2 gap-4'
                                 >
-                                    {/* <div>
-                                        <RadioGroupItem
-                                            value='jazzcash'
-                                            id='jazzcash'
-                                            className='peer sr-only'
-                                        />
-                                        <Label
-                                            htmlFor='jazzcash'
-                                            className='flex flex-col items-center justify-between rounded-md border-2 border-gray-700 bg-gray-800 p-4 hover:bg-gray-700 hover:text-white peer-data-[state=checked]:border-emerald-500 [&:has([data-state=checked])]:border-emerald-500'
-                                        >
-                                            <img
-                                                src='/jazzcash-logo.png'
-                                                alt='JazzCash'
-                                                className='h-12 mb-2'
-                                            />
-                                            JazzCash
-                                        </Label>
-                                    </div> */}
                                     <div>
                                         <RadioGroupItem
                                             value='easypaisa'
@@ -898,7 +826,11 @@ export default function Page() {
                                         !screenshot)
                                 }
                             >
-                                {isProcessing ? 'Processing...' : 'Pay Now'}
+                                {isProcessing
+                                    ? 'Processing...'
+                                    : paymentMethod === 'bank_transfer'
+                                    ? 'Submit'
+                                    : 'Pay Now'}
                             </Button>
                         </form>
                     )}
