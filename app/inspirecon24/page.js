@@ -51,8 +51,8 @@ export default function Component() {
     const [screenshot, setScreenshot] = useState(null);
 
     const ticketPrices = {
-        standard: 13,
-        pack: 13,
+        standard: 1000,
+        pack: 4000,
     };
 
     const originalPrices = {
