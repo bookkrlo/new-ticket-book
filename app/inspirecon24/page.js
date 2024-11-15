@@ -321,7 +321,7 @@ export default function Component() {
                             </div>
                             <div className='flex items-center'>
                                 <Clock className='w-5 h-5 mr-2' />
-                                <span>08:30 pm</span>
+                                <span>11:00 am</span>
                             </div>
                             <div className='flex items-center'>
                                 <MapPin className='w-5 h-5 mr-2' />
@@ -491,28 +491,24 @@ export default function Component() {
                                         About the Event
                                     </h3>
                                     <p className='text-gray-200'>
-                                        This event aims to foster a culture of
-                                        entrepreneurial thinking, motivate
-                                        aspiring entrepreneurs, and explore key
-                                        norms that drive success in today's
-                                        dynamic economy. Through InspireCon, we
-                                        are committed to guiding the next
-                                        generation of changemakers, offering
-                                        valuable industry insights, and sharing
-                                        the personal stories of successful
-                                        industry icons about how they began
-                                        their journeys and achieved their goals.
+                                       InspireCon'24 is the biggest entrepreneurial event of the year,
+                                                dedicated to empowering the next generation of rising
+                                                entrepreneurs and freelancers. This flagship event will bring
+                                                    together renowned speakers who will share their personal journeys,
+                                                        insights, and expert advice on navigating the world of entrepreneurship.
+                                                        It's a unique opportunity for aspiring entrepreneurs to learn directly from 
+                                                        successful business leaders and gain valuable guidance for building their own paths to success.
                                     </p>
                                     <div className='space-y-2'>
                                         <p className='text-gray-200'>
                                             <strong>Date:</strong> 26 Nov 2024
                                         </p>
                                         <p className='text-gray-200'>
-                                            <strong>Gates Open:</strong> 8:00 PM
+                                            <strong>Gates Open:</strong> 10:00 AM
                                         </p>
                                         <p className='text-gray-200'>
-                                            <strong>Event Time:</strong> 8:30 -
-                                            11:30 PM
+                                            <strong>Event Time:</strong> 11:00 am - 4:00pm
+
                                         </p>
                                         <p className='text-gray-200'>
                                             <strong>Venue:</strong> Main
