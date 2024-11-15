@@ -321,7 +321,7 @@ export default function Component() {
                             </div>
                             <div className='flex items-center'>
                                 <Clock className='w-5 h-5 mr-2' />
-                                <span>11:00 pm</span>
+                                <span>08:30 pm</span>
                             </div>
                             <div className='flex items-center'>
                                 <MapPin className='w-5 h-5 mr-2' />
@@ -589,14 +589,14 @@ export default function Component() {
                 </div>
             </div>
 
-              <footer className='bg-gray-800 border-t border-gray-700'>
+            <footer className='bg-gray-800 border-t border-gray-700'>
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
                     <div className='grid grid-cols-1 md:grid-cols-4 gap-8'>
                         <div>
-                            <h3 className='text-lg font-semibold mb-4 text-primary-600 text-center'>
+                            <h3 className='text-lg font-semibold mb-4 text-white'>
                                 Socials
                             </h3>
-                            <div className='flex space-x-4 items-center justify-center'>
+                            <div className='flex space-x-4'>
                                 <Link
                                     href='https://www.facebook.com/bookkrlof'
                                     aria-label='Facebook'
@@ -613,57 +613,18 @@ export default function Component() {
                                 </Link>
                             </div>
                         </div>
-                        {/* <div>
-                            <h3 className='text-lg font-semibold mb-4 text-white'>
-                                Resources
-                            </h3>
-                            <ul className='space-y-2'>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        About Us
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Terms
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Privacy
-                                    </Link>
-                                </li>
-                                <li>
-                                    <Link
-                                        href='/'
-                                        className='text-gray-300 hover:text-white'
-                                    >
-                                        Contact
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div> */}
                         <div>
-                            <h3 className='text-lg font-semibold mb-4 text-primary-600 text-center'>
+                            <h3 className='text-lg font-semibold mb-4 text-white'>
                                 Contact
                             </h3>
-                            <p className='text-gray-300 text-center'>
+                            <p className='text-gray-300'>
                                 bookkrlo.info@gmail.com
                             </p>
                         </div>
-                        <div className='flex flex-col items-center justify-center space-y-2'>
+                        <div>
                             <Link
                                 href='/'
-                                className='text-2xl font-bold text-primary-400 text-center'
+                                className='text-2xl font-bold text-emerald-400'
                             >
                                 <Image
                                     src={logo}
@@ -673,7 +634,7 @@ export default function Component() {
                                     priority
                                 />
                             </Link>
-                            <p className='text-gray-300 mt-2 text-center'>
+                            <p className='text-gray-300 mt-2'>
                                 Event near or far, just book krlo yaar!
                             </p>
                         </div>
