@@ -18,7 +18,7 @@ module.exports = {
           600: '#82c600',   // Darker shade
           700: '#5d8e00', // Even darker
           800: '#385500', // Very dark
-          900: '#131c00', // Darkest
+          900: '#131c00' // Darkest
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
