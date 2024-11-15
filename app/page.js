@@ -28,7 +28,7 @@ export default function Component() {
                         <div className='flex items-center'>
                             <Link
                                 href='/'
-                                className='text-2xl font-bold text-emerald-400'
+                                className='text-2xl font-bold text-primary-500'
                             >
                                 <Image
                                     src={logo}
@@ -62,7 +62,7 @@ export default function Component() {
                             </div>
                         </div>
                         <Button
-                            className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
+                            className='bg-primary-600 hover:bg-primary-700 rounded-full'
                             onClick={() => setIsListEventModalOpen(true)}
                         >
                             List Your Event
@@ -85,7 +85,7 @@ export default function Component() {
                 </div>
 
                 <div className='text-center max-w-2xl mx-auto mt-8'>
-                    <h1 className='text-4xl font-bold mb-2 text-emerald-400'>
+                    <h1 className='text-4xl font-bold mb-2 text-primary-600'>
                         Events
                     </h1>
                 </div>
@@ -179,7 +179,7 @@ export default function Component() {
                         <div className='flex flex-col items-center justify-center space-y-2'>
                             <Link
                                 href='/'
-                                className='text-2xl font-bold text-emerald-400 text-center'
+                                className='text-2xl font-bold text-primary-400 text-center'
                             >
                                 <Image
                                     src={logo}
@@ -216,7 +216,7 @@ export default function Component() {
                     </div>
                     <Button
                         onClick={() => setIsListEventModalOpen(false)}
-                        className='bg-emerald-500 hover:bg-emerald-600 rounded-full'
+                        className='bg-primary-500 hover:bg-primary-600 rounded-full'
                     >
                         Close
                     </Button>
