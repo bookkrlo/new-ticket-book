@@ -84,7 +84,11 @@ export default function Component() {
                     </div>
                 </div>
 
-        
+                <div className='text-center max-w-2xl mx-auto mt-8'>
+                    <h1 className='text-4xl font-bold mb-2 text-primary-600'>
+                        Events
+                    </h1>
+                </div>
 
                 <div className='fill max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 relative w-full rounded-3xl overflow-hidden'>
                     <div className='rounded-3xl overflow-hidden transition-opacity duration-300 hover:opacity-85'>
