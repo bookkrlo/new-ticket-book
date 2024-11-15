@@ -84,14 +84,14 @@ export default function Component() {
                     </div>
                 </div>
 
-                  <div className="relative h-64 w-full overflow-hidden bg-background text-foreground">
+                       <div className="relative h-screen w-full overflow-hidden bg-primary text-foreground">
             {/* First Heading (Diagonal, Moving) */}
-            <h1 className="absolute rotate-45 text-4xl font-bold animate-marquee whitespace-nowrap">
+            <h1 className="absolute rotate-45 bg-teal-400 text-4xl font-bold animate-diagonalMarquee whitespace-nowrap">
                 Welcome to Our Website – Bringing Innovation to You!
             </h1>
 
             {/* Second Heading (Opposite Diagonal, Moving) */}
-            <h1 className="absolute -rotate-45 text-4xl font-bold animate-marquee whitespace-nowrap">
+            <h1 className="absolute -rotate-45 bg-teal-400 text-4xl font-bold animate-diagonalMarquee whitespace-nowrap">
                 Explore Endless Opportunities – Join Us Now!
             </h1>
         </div>
