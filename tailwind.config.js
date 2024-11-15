@@ -29,13 +29,14 @@ module.exports = {
                 sm: 'calc(var(--radius) - 4px)',
             },
             keyframes: {
-                marquee: {
-                    '0%': { transform: 'translateX(-100%)' },
-                    '100%': { transform: 'translateX(100%)' },
+                   keyframes: {
+                diagonalMarquee: {
+                    '0%': { transform: 'translate(-100%, -100%)' },
+                    '100%': { transform: 'translate(100%, 100%)' },
                 },
             },
             animation: {
-                marquee: 'marquee 10s linear infinite',
+                diagonalMarquee: 'diagonalMarquee 10s linear infinite',
             },
         },
     },
