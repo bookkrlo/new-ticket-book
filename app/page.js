@@ -84,26 +84,17 @@ export default function Component() {
                     </div>
                 </div>
 
-                    //testing div start
-                                
-                 <div className="relative h-64 w-full flex items-center justify-center bg-background text-foreground">
-                        {/* First Heading (Diagonal) */}
-                        <h1 className="absolute rotate-45 text-4xl font-bold">
-                            Welcome to Our Website
-                        </h1>
+                  <div className="relative h-64 w-full overflow-hidden bg-background text-foreground">
+            {/* First Heading (Diagonal, Moving) */}
+            <h1 className="absolute rotate-45 text-4xl font-bold animate-marquee whitespace-nowrap">
+                Welcome to Our Website – Bringing Innovation to You!
+            </h1>
 
-                        {/* Second Heading (Opposite Diagonal) */}
-                        <h1 className="absolute -rotate-45 text-4xl font-bold">
-                            Innovation Awaits
-                        </h1>
-                  </div> 
-                                
-                <div className='text-center max-w-2xl mx-auto mt-8'>
-                    <h1 className='text-4xl font-bold mb-2 text-primary-600'>
-                        Events
-                    </h1>
-                </div>
-                             //testing div end
+            {/* Second Heading (Opposite Diagonal, Moving) */}
+            <h1 className="absolute -rotate-45 text-4xl font-bold animate-marquee whitespace-nowrap">
+                Explore Endless Opportunities – Join Us Now!
+            </h1>
+        </div>
 
                 <div className='fill max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 mb-4 relative w-full rounded-3xl overflow-hidden'>
                     <div className='rounded-3xl overflow-hidden transition-opacity duration-300 hover:opacity-85'>
@@ -129,7 +120,7 @@ export default function Component() {
                             </h3>
                             <div className='flex space-x-4 items-center justify-center'>
                                 <Link
-                                    href='https://www.facebook.com/bookkrlof'
+                                    href='https://www.facebook.com/bookkrlo'
                                     aria-label='Facebook'
                                     className='text-gray-300 hover:text-white'
                                 >
