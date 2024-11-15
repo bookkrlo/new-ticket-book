@@ -594,7 +594,7 @@ export default function Component() {
                             </h3>
                             <div className='flex space-x-4 items-center justify-center'>
                                 <Link
-                                    href='https://www.facebook.com/bookkrlof'
+                                    href='https://www.facebook.com/bookkrlo'
                                     aria-label='Facebook'
                                     className='text-gray-300 hover:text-white'
                                 >
