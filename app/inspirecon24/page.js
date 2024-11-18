@@ -1,6 +1,7 @@
 'use client';
 
 import Head from 'next/head';
+import Script from 'next/script';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
