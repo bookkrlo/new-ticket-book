@@ -244,7 +244,7 @@ export default function Component() {
     };
 
     return (
-
+            <>
          <Head>
         <title>Speakers - Bookkrlo</title>
         <meta
@@ -921,5 +921,6 @@ export default function Component() {
 
             <Toaster />
         </div>
-    );
+ </>  
+);
 }
