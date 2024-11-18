@@ -23,7 +23,7 @@ export default function RootLayout({ children }) {
         <meta property="og:image" content="@/assets/images/logo.svg" />
         <meta property="og:url" content="https://bookkrlo.com" />
 
-            <script>
+              {/* <script>
                 !function(f,b,e,v,n,t,s)
                 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
                 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
                 <noscript><img height="1" width="1" style="display:none"
                 src="https://www.facebook.com/tr?id=943134844582031&ev=PageView&noscript=1"
                 />
-          </noscript>
+          </noscript> */}
  
               
       </head>
