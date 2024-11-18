@@ -7,7 +7,22 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
         <head>
-        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "Bookkrlo",
+              "url": "https://bookkrlo.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://bookkrlo.com/search?q={search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         <title>Bookkrlo - Effortless Ticket Booking</title>
         <meta
           name="description"
