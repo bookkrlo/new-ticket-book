@@ -249,19 +249,24 @@ export default function Component() {
         <title>Speakers - Bookkrlo</title>
         <meta
           name="description"
-          content="Discover top speakers at our events. Book tickets for the best conferences and talks!"
+          content="InspireCon'24 is the biggest entrepreneurial event of the year, 
+              dedicated to empowering the next generation of rising entrepreneurs and freelancers.
+              This flagship event will bring together renowned speakers who will share their personal journeys, 
+              insights, and expert advice on navigating the world of entrepreneurship.
+              It's a unique opportunity for aspiring entrepreneurs to learn directly
+              from successful business leaders and gain valuable guidance for building their own paths to success."
         />
         <meta
           name="keywords"
-          content="inspirecon24, event speakers, book events, conferences, talks"
+          content="inspirecon24,bookkrlo, Ahmed Rauf essa, Saad Afridi, and Mush Panjwani, event speakers, book events, conferences, talks"
         />
-        <meta property="og:title" content="Speakers - Bookkrlo" />
+        <meta property="og:title" content="Inspirecon'24 - Bookkrlo" />
         <meta
           property="og:description"
-          content="Find and book tickets for events featuring amazing speakers!"
+          content="InspireCon'24: Empower Your Entrepreneurial Journey!"
         />
         <meta property="og:image" content="/assets/images/speakers-banner.jpg" />
-        <meta property="og:url" content="https://bookkrlo.com/speakers" />
+        <meta property="og:url" content="https://bookkrlo.com/inspirecon24" />
               </Head>
               
         <div className='min-h-screen bg-black text-white flex flex-col'>
