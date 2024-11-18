@@ -246,6 +246,46 @@ export default function Component() {
     return (
             <>
          <Head>
+         <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Event",
+              "name": "InspireCon'24",
+              "startDate": "2024-11-26T11:00:00+05:00",
+              "endDate": "2024-11-26T17:00:00+05:00",
+              "location": {
+                "@type": "Place",
+                "name": "ST-13 Abul Hasan Isphahani Rd, Block 7 Gulshan-e-Iqbal",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "ST-13 Abul Hasan Isphahani Rd, Block 7 Gulshan-e-Iqbal",
+                  "addressLocality": "Karachi",
+                  "addressRegion": "Sindh",
+                  "postalCode": "75300",
+                  "addressCountry": "PK"
+                }
+              },
+              "image": "https://bookkrlo.com/assets/images/inspirecon.jpg",
+              "description": "InspireCon'24 is the biggest entrepreneurial event of the year, dedicated to empowering the next generation of rising entrepreneurs and freelancers.",
+              "offers": {
+                "@type": "Offer",
+                "url": "https://bookkrlo.com/inspirecon24",
+                "price": "1000",
+                "priceCurrency": "PKR",
+                "availability": "https://schema.org/InStock",
+                "validFrom": "2024-10-01T00:00:00+05:00"
+              },
+              "performer": {
+                "@type": "Person",
+                "name": "Renowned Speakers"
+              },
+              "eventStatus": "https://schema.org/EventScheduled",
+              "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+            }),
+          }}
+        />
         <title>Speakers - Bookkrlo</title>
         <meta
           name="description"
