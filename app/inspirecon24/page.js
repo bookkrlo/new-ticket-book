@@ -1,5 +1,6 @@
 'use client';
 
+import Head from 'next/head';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -243,6 +244,26 @@ export default function Component() {
     };
 
     return (
+
+         <Head>
+        <title>Speakers - Bookkrlo</title>
+        <meta
+          name="description"
+          content="Discover top speakers at our events. Book tickets for the best conferences and talks!"
+        />
+        <meta
+          name="keywords"
+          content="inspirecon24, event speakers, book events, conferences, talks"
+        />
+        <meta property="og:title" content="Speakers - Bookkrlo" />
+        <meta
+          property="og:description"
+          content="Find and book tickets for events featuring amazing speakers!"
+        />
+        <meta property="og:image" content="/assets/images/speakers-banner.jpg" />
+        <meta property="og:url" content="https://bookkrlo.com/speakers" />
+              </Head>
+              
         <div className='min-h-screen bg-black text-white flex flex-col'>
             <nav className='border-b border-gray-800'>
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
