@@ -941,6 +941,11 @@ export default function Component() {
                             </div>
                             {paymentMethod === 'bank_transfer' && (
                                 <div className='space-y-2'>
+                                 <p className='text-gray-300 text-center'>
+                                        MUHAMMAD TAQI ARIF GANATRA <br />
+                                        Meezan bank <br />
+                                        Account Number: 01500108093059
+                                    </p>
                                     <Label htmlFor='screenshot'>
                                         Upload Payment Screenshot
                                     </Label>
