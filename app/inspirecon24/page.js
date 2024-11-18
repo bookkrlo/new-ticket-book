@@ -247,6 +247,8 @@ export default function Component() {
     return (
             <>
          <Head>
+
+        {/* schemas script started  */}
          <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -288,7 +290,9 @@ export default function Component() {
           }}
         />
 
-             {/* Facebook Meta Pixel NoScript Fallback */}
+        {/* schemas script ended  */}
+
+             {/* Facebook Meta Pixel NoScript Fallback started */}
         <noscript>
           <img
             height="1"
@@ -316,8 +320,12 @@ export default function Component() {
           `,
         }}
       />
-            
+
+          {/* Facebook Meta Pixel NoScript Fallback ended  */}
+          
         <title>Speakers - Bookkrlo</title>
+
+             {/* GOOGLE META SEO STARTED  */}
         <meta
           name="description"
           content="InspireCon'24 is the biggest entrepreneurial event of the year, 
@@ -338,6 +346,9 @@ export default function Component() {
         />
         <meta property="og:image" content="@/assets/images/inspirecon-dropdown-banner.png" />
         <meta property="og:url" content="https://bookkrlo.com/inspirecon24" />
+
+                   {/* GOOGLE META SEO ENDED  */}
+              
               </Head>
               
         <div className='min-h-screen bg-black text-white flex flex-col'>
@@ -644,8 +655,8 @@ export default function Component() {
                     </Tabs>
 
                     <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
-                        <h2 className='text-3xl font-bold mb-8'>
-                            <span className='text-primary-600 text-center'>Tentative Speakers</span>
+                        <h2 className='text-3xl font-bold mb-8 text-center'>
+                            <span className='text-primary-600 '>Tentative Speakers</span>
                         </h2>
                         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                             {speakers.map((speaker, index) => (
