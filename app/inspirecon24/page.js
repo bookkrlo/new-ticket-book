@@ -33,6 +33,8 @@ import usamaGhori from '@/assets/images/speakers/usamaGhori.png';
 import usmanSaleem from '@/assets/images/speakers/usmanSaleem.png';
 import wajihUdDin from '@/assets/images/speakers/wajihUdDin.png';
 import logo from '@/assets/images/logo.svg';
+import dropdown from '@/assets/images/inspirecon-dropdown-banner.webp';
+
 
 export default function Component() {
     const [activeTab, setActiveTab] = useState('tickets');
@@ -344,7 +346,7 @@ export default function Component() {
           property="og:description"
           content="InspireCon'24: Empower Your Entrepreneurial Journey!"
         />
-        <meta property="og:image" content="@/assets/images/inspirecon-dropdown-banner.webp" />
+        <meta property="og:image" content={dropdown} />
         <meta property="og:url" content="https://bookkrlo.com/inspirecon24" />
 
                    {/* GOOGLE META SEO ENDED  */}
