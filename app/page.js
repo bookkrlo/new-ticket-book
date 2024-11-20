@@ -21,6 +21,21 @@ export default function Component() {
         React.useState(false);
 
     return (
+        <>
+         <meta
+          name="description"
+          content="Book tickets for events, movies, and travel easily with Bookkrlo."
+        />
+        <meta name="keywords" content="bookkrlo, book karlo, book krlo, bookkarlo.com, bookkrlo.com ,tickets, events, movies, travel" />
+        <meta name="author" content="Bookkrlo Team" />
+        <meta property="og:title" content="Bookkrlo - Book Tickets Online" />
+        <meta
+          property="og:description"
+          content="Events Near or Far! Just Book Krlo, Yaar!"
+        />
+        <meta property="og:image" content="https://res.cloudinary.com/di0zgxtka/image/upload/v1732079706/book_kr_lo_logo_500_x_500_lohroq.webp" />
+        <meta property="og:url" content="https://bookkrlo.com" />
+              
         <div className='min-h-screen bg-black text-white flex flex-col'>
             <nav className='border-b border-gray-800'>
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
@@ -223,5 +238,6 @@ export default function Component() {
                 </DialogContent>
             </Dialog>
         </div>
+                            </>
     );
 }
