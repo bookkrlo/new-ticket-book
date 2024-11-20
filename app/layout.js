@@ -1,7 +1,7 @@
 import './globals.css';
 import { Toaster } from 'sonner';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
+import useRouter from 'next/router';
 
 {/*
         <meta
