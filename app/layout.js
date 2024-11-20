@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="Events Near or Far! Just Book Krlo, Yaar!"
         />
-        <meta property="og:image" content="@/assets/images/logo.svg" />
+        <meta property="og:image" content="https://res.cloudinary.com/di0zgxtka/image/upload/v1732079706/book_kr_lo_logo_500_x_500_lohroq.webp" />
         <meta property="og:url" content="https://bookkrlo.com" />
 
               {/* <script>
