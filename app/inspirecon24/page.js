@@ -346,7 +346,7 @@ export default function Component() {
           property="og:description"
           content="InspireCon'24: Empower Your Entrepreneurial Journey!"
         />
-        <meta property="og:image" content={dropdown} />
+        <meta property="og:image" content="https://res.cloudinary.com/di0zgxtka/image/upload/v1732079438/inspirecon-dropdown-banner_sgrdmj.webp" />
         <meta property="og:url" content="https://bookkrlo.com/inspirecon24" />
 
                    {/* GOOGLE META SEO ENDED  */}
