@@ -32,6 +32,8 @@ import saadLakhi from '@/assets/images/speakers/saadLakhi.png';
 import usamaGhori from '@/assets/images/speakers/usamaGhori.png';
 import usmanSaleem from '@/assets/images/speakers/usmanSaleem.png';
 import wajihUdDin from '@/assets/images/speakers/wajihUdDin.png';
+import faraz from '@/assets/images/speakers/faraz-bw.jpg';
+import laman from '@/assets/images/speakers/laman-riaz.jpg';
 import logo from '@/assets/images/logo.svg';
 import dropdown from '@/assets/images/inspirecon-dropdown-banner.webp';
 
@@ -67,6 +69,13 @@ export default function Component() {
     const packOfFivePrice = 4000;
 
     const speakers = [
+       
+          {
+            name: 'Kiran Nayab',
+            title: 'Event Host',
+            handle: '',
+            image: kiranNayab,
+        },
         {
             name: 'Ahmed Rauf',
             title: 'Founder',
@@ -74,53 +83,39 @@ export default function Component() {
             image: ahmedRauf,
         },
         {
-            name: 'Saad Afridi',
-            title: 'CEO',
-            handle: '@scentsnstories',
-            image: saadAfridi,
+            name: 'Mush Panjwani',
+            title: 'Founder',
+            handle: '@Coffee Wagera',
+            image: mushPanjwani,
         },
+       
         {
             name: 'Saad Lakhi',
             title: 'Founder',
             handle: '@SRL Commercify',
             image: saadLakhi,
         },
-        {
-            name: 'Mush Panjwani',
-            title: 'Founder',
-            handle: '@Coffee Wagera',
-            image: mushPanjwani,
-        },
-        {
-            name: 'Usman Saleem',
+         {
+            name: 'Faraz',
             title: 'CEO',
-            handle: '@Khazanay',
-            image: usmanSaleem,
+            handle: '@Blackenwhite',
+            image: faraz,
         },
-        {
-            name: 'Maryam Rao',
-            title: 'Consultant Trainer',
-            handle: '@SBCG',
-            image: maryamRao,
+         {
+            name: 'Laman Riaz',
+            title: 'CFO ',
+            handle: '@BusCaro',
+            image: laman,
         },
-        {
-            name: 'Kiran Nayab',
-            title: 'Event Host',
-            handle: '',
-            image: kiranNayab,
-        },
+        
+      
         {
             name: 'Wajih Uddin',
             title: 'Speaker',
             handle: '@Youth Club',
             image: wajihUdDin,
         },
-        {
-            name: 'Usama Ghori',
-            title: 'Comedian',
-            handle: '',
-            image: usamaGhori,
-        },
+      
     ];
 
     const handleInputChange = (e) => {
@@ -658,7 +653,7 @@ export default function Component() {
 
                     <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8'>
                         <h2 className='text-3xl font-bold mb-8 text-center'>
-                            <span className='text-primary-600 '>Tentative Speakers</span>
+                            <span className='text-primary-600 '>OUR SPEAKERS</span>
                         </h2>
                         <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4'>
                             {speakers.map((speaker, index) => (
