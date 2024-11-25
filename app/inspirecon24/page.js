@@ -414,7 +414,7 @@ export default function Component() {
                 <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8'>
                     <div>
                         <h1 className='text-4xl font-bold mb-2 text-primary-600'>
-                            InspireCon'24
+                            InspireCon'24 (Sold out)
                         </h1>
                         <h2 className='text-xl mb-4'>
                             Inspiring Journeys from Vision to Reality.
@@ -577,11 +577,17 @@ export default function Component() {
                                             </div>
                                         </div>
 
-                                        <Button
+                                        {/* <Button
                                             className='w-full bg-primary-600 hover:bg-primary-700 rounded-full'
                                             onClick={() => setIsModalOpen(true)}
                                         >
                                             Proceed to Checkout
+                                            <ChevronRight className='ml-2 h-4 w-4' />
+                                        </Button> */}
+                                        <Button
+                                            className='w-full bg-gray-600 hover:bg-gray-600 rounded-full cursor-not-allowed'
+                                        >
+                                            Sold out
                                             <ChevronRight className='ml-2 h-4 w-4' />
                                         </Button>
                                     </div>
